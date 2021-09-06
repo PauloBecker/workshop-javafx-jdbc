@@ -12,6 +12,7 @@ public class Main extends Application {
 
 	@Override
 	public void start(Stage primaryStage) {
+		
 	try {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/MainView.fxml"));
 		Parent parent = loader.load();
@@ -20,7 +21,8 @@ public class Main extends Application {
 		primaryStage.setScene(mainScene);
 		primaryStage.setTitle("Sample JavaFX application");
 		primaryStage.show();
-	}catch(IOException e){
+		
+		}catch(IOException e){
 		
 		e.printStackTrace();
 	}
