@@ -66,6 +66,7 @@ public class DepartmentListController implements Initializable{
 		
 	}
 	
+	
 	public void updateTableView() {
 		
 		if(service == null) {
