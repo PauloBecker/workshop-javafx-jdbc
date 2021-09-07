@@ -103,7 +103,7 @@ public class DepartmentFormController implements Initializable{
 		//Condição para verificar se o campo está vazio e retonar msg de erro caso true
 		if (txtName.getText() == null || txtName.getText().trim().equals("")) {
 			
-			exception.addError("Name", "Field can't be empty");
+			exception.addError("name", "Field can't be empty");
 		}
 		obj.setName(txtName.getText());
 		
