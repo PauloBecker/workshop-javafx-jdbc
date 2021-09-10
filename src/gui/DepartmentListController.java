@@ -57,6 +57,7 @@ public class DepartmentListController implements Initializable, DataChangeListen
 
 	@FXML
 	public void onBtNewAction(javafx.event.ActionEvent event) {
+		
 
 		Stage parentStage = Utils.currentStage(event);
 		Department obj = new Department();
@@ -121,6 +122,7 @@ public class DepartmentListController implements Initializable, DataChangeListen
 
 		} catch (IOException e) {
 
+			e.printStackTrace();
 			Alerts.showAlert("IO Exception", "Error loading view", e.getMessage(), AlertType.ERROR);
 		}
 	}
