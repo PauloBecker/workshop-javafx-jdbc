@@ -8,6 +8,7 @@ import model.entities.Seller;
 
 public class SellerService {
 	
+	
 	private SellerDao dao = DaoFactory.createSellerDao();
 	
 		public List<Seller> findAll(){
