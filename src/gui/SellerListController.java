@@ -32,6 +32,7 @@ import javafx.stage.Stage;
 import model.entities.Seller;
 import model.services.DepartmentService;
 import model.services.SellerService;
+import model.services.SellerService;
 
 public class SellerListController implements Initializable, DataChangeListener {
 
@@ -198,8 +199,8 @@ public class SellerListController implements Initializable, DataChangeListener {
 				throw new IllegalStateException("Service was null");
 			}
 			try {
-			service.remove(obj);
-			updateTableView();
+				service.remove(obj);
+				updateTableView();
 			
 			}
 			catch(DbIntegrityException e) {
